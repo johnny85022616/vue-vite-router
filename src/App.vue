@@ -13,9 +13,11 @@ import { RouterLink, RouterView , useRouter } from 'vue-router'
 
     <div class="wrapper">
       <nav>
+        <h1>router</h1>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
         <RouterLink to="/nested">Nested</RouterLink>
+        <h1>vue3 setup語法糖</h1>
       </nav>
     </div>
   </header>
