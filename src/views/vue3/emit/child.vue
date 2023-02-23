@@ -7,7 +7,7 @@
 
 <script setup>
   const emit = defineEmits(['plus'])
-  function handleClick(){
+  function handleClick(){  
     emit('plus')
   }
 </script>

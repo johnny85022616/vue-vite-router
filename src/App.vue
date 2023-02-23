@@ -20,6 +20,7 @@ import { RouterLink, RouterView , useRouter } from 'vue-router'
         <h3>vue3</h3>
         <RouterLink to="/vue3/props">Props</RouterLink>
         <RouterLink to="/vue3/emit">Emit</RouterLink>
+        <RouterLink to="/vue3/componentVmodel">Component v-model</RouterLink>
       </nav>
     </div>
   </header>
