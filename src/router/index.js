@@ -23,6 +23,11 @@ const router = createRouter({
       component:() => import("../views/vue3/props/index.vue"),
     },
     {
+      path: "/vue3/emit",
+      name: "emit",
+      component:() => import("../views/vue3/emit/index.vue"),
+    },
+    {
       path: "/nested",
       name: "nested",
       component: () => import("../views/nested.vue"),

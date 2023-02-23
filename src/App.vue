@@ -19,6 +19,7 @@ import { RouterLink, RouterView , useRouter } from 'vue-router'
         <RouterLink to="/nested">Nested</RouterLink>
         <h3>vue3</h3>
         <RouterLink to="/vue3/props">Props</RouterLink>
+        <RouterLink to="/vue3/emit">Emit</RouterLink>
       </nav>
     </div>
   </header>
