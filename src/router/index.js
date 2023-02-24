@@ -33,6 +33,11 @@ const router = createRouter({
       component:() => import("../views/vue3/componentVmodel/index.vue"),
     },
     {
+      path: "/vue3/composables",
+      name: "composables",
+      component:() => import("../views/vue3/composables/index.vue"),
+    },
+    {
       path: "/nested",
       name: "nested",
       component: () => import("../views/nested.vue"),
