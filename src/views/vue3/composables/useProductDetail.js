@@ -14,14 +14,18 @@ export function useProductDetail(initVal) {
   }
 
   function setProduct(val){
-    console.log(78);
     product.value = val;
+  }
+
+  function setIntro(val){
+    product.value.intro = val
   }
 
   fetchData()
 
   return {
     product: readonly(product),
-    setProduct
+    setProduct,
+    setIntro
   };
 }
