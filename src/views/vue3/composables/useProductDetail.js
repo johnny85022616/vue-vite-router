@@ -1,22 +1,27 @@
-import { reactive } from "vue";
+import { readonly, ref } from "vue";
 
 export function useProductDetail(initVal) {
-
-  const state = reactive({ productData: initVal });
+  const product = ref(initVal);
 
   async function fetchData() {
     await fetch(
       "https://m.shopping.friday.tw/mobileapi/api/product/7995418/detail?cid=419485"
     )
       .then((res) => res.json())
-      .then((result) => {
-        console.log(1235);
-        state.productData = result.data[0]
+      .then((result) => { 
+        product.value = result.data[0]
       });
   }
 
+  function setProduct(val){
+    console.log(78);
+    product.value = val;
+  }
+
+  fetchData()
+
   return {
-    state,
-    fetchData
+    product: readonly(product),
+    setProduct
   };
 }

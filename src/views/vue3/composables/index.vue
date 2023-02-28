@@ -1,28 +1,17 @@
 <template>
   <div class="composables">
     <h1>Composables</h1>
-    <p>count:{{count}}</p>
-    <button @click="plus">+1</button>
-    <h2>productDetail</h2>
-    <p v-if="state.productDetail">{{state.productDetail}}</p>
+    <productInfo v-if="product" :productDetail="product" @setProduct="setProduct"/>
   </div>
 </template>
 
 <script setup>
-import { onMounted } from 'vue';
-import {useCount} from './useCount';
 import {useProductDetail} from './useProductDetail';
-let {count , setCount} = useCount(0)
-let {state,fetchData} = useProductDetail(null)
+import productInfo from './product.vue';
 
-onMounted(()=>{
-  fetchData();
-})
+let {product,setProduct} = useProductDetail(null)
 
 
-function plus(){
-  setCount(count.value += 1)
-}
 </script>
 
 <style scoped>
