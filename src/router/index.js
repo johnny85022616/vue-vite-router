@@ -18,6 +18,31 @@ const router = createRouter({
       component: () => import("../views/AboutView.vue"),
     },
     {
+      path: "/vue3/props",
+      name: "props",
+      component:() => import("../views/vue3/props/index.vue"),
+    },
+    {
+      path: "/vue3/emit",
+      name: "emit",
+      component:() => import("../views/vue3/emit/index.vue"),
+    },
+    {
+      path: "/vue3/componentVmodel",
+      name: "componentVmodel",
+      component:() => import("../views/vue3/componentVmodel/index.vue"),
+    },
+    {
+      path: "/vue3/composables",
+      name: "composables",
+      component:() => import("../views/vue3/composables/index.vue"),
+    },
+    {
+      path: "/vue3/defineExpose",
+      name: "defineExpose",
+      component:() => import("../views/vue3/defineExpose/index.vue"),
+    },
+    {
       path: "/nested",
       name: "nested",
       component: () => import("../views/nested.vue"),
