@@ -8,9 +8,16 @@
 <script setup>
 import {useProductDetail} from './useProductDetail';
 import productInfo from './product.vue';
+import { onMounted } from 'vue';
 
-let {product,setProduct,setIntro} = useProductDetail(null)
+let {product,fetchData,setProduct,setIntro} = useProductDetail(null)
 
+
+onMounted(async()=>{  
+  await fetchData();
+  console.log(product);
+  setProduct({...product.value, a:'這是打完API之後新加的屬性'})
+})
 
 </script>
 
