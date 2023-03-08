@@ -1,12 +1,14 @@
 <template>
   <div class="composables">
     <h1>Composables</h1>
+    <count></count>
     <productInfo v-if="product" :productDetail="product" @setProduct="setProduct" @setIntro="setIntro"/>
   </div>
 </template>
 
 <script setup>
 import {useProductDetail} from './useProductDetail';
+import count from './count.vue';
 import productInfo from './product.vue';
 import { onMounted } from 'vue';
 
