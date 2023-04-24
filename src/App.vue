@@ -25,7 +25,9 @@ import { RouterLink, RouterView , useRouter } from 'vue-router'
         <RouterLink to="/vue3/defineExpose">DefineExpose</RouterLink>
         <h3>Pinia</h3>
         <RouterLink to="/vue3/pinia">pinia</RouterLink>
-        
+        <h3>Test</h3>
+        <RouterLink to="/vue3/test/debounce">debounce</RouterLink>
+        <RouterLink to="/vue3/test/throttle">throttle</RouterLink>
       </nav>
     </div>
   </header>

@@ -10,6 +10,26 @@ export default{
     const d = new Date(date)
     d.setDate(d.getDate() - days)
     return d 
-  }
+  },
+  //只會執行最後一次
+  unbounce(func,delay){
+    var time
+    return function(args){
+      let that = this
+      clearTimeout(time) 
+      time = setTimeout(function(){
+        func.call(that, args)
+      },delay)
+    }
+  },
+  //一定時間內只會執行一次
+  throttle(func, delay){
+    var lastTime 
+    return function (){
+      let nowTime = new Date()
+      if(nowTime - lastTime > delay){
+        func();
+      }
+    }
+  } 
 }
-
