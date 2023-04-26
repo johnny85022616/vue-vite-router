@@ -24,10 +24,11 @@ export default{
   },
   //一定時間內只會執行一次
   throttle(func, delay){
-    var lastTime 
+    var lastTime = 0
     return function (){
       let nowTime = new Date()
       if(nowTime - lastTime > delay){
+        lastTime = nowTime
         func();
       }
     }

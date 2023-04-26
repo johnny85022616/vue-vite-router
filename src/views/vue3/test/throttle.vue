@@ -1,25 +1,30 @@
 <template>
-  <h2>windowY : {{wy}}</h2>
+  <div class="throttle">
+    <h2>windowY : {{wy}}</h2>
+  </div>
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { onMounted, ref } from 'vue';
 import tools from '../../../utils/tools';
 
 const wy = ref(0)
 function setOffsetTop(){
   wy.value = window.scrollY
 }
-const throttleFoo = tools.throttle(setOffsetTop , 1000);
+const throttleFoo = tools.throttle(setOffsetTop , 500);
 
-window.addEventListener('scroll' , function(){
-  console.log(12);
-  throttleFoo()
-})
-  
+window.addEventListener("scroll" , throttleFoo)
 
 </script>
 
 <style lang='scss' scoped>
-
+  .throttle{
+    height: 3000px;
+    h2{
+      position: fixed;
+      left: 50%;
+      top: 50%;
+    }
+  }
 </style>
