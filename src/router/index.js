@@ -43,6 +43,21 @@ const router = createRouter({
       component:() => import("../views/vue3/defineExpose/index.vue"),
     },
     {
+      path: "/vue3/pinia",
+      name: "pinia",
+      component:() => import("../views/vue3/pinia/index.vue"),
+    },
+    {
+      path: "/vue3/test/debounce",
+      name: "debounce",
+      component:() => import("../views/vue3/test/debounce.vue"),
+    },
+    {
+      path: "/vue3/test/throttle",
+      name: "throttle",
+      component:() => import("../views/vue3/test/throttle.vue"),
+    },
+    {
       path: "/nested",
       name: "nested",
       component: () => import("../views/nested.vue"),
