@@ -1,8 +1,7 @@
-<script setup lang="ts">
+<script setup>
+import filterInput from './vue3/test/filterInput.vue';
 </script>
 
 <template>
-  <main>
-    Home 
-  </main>
+  <filterInput/>
 </template>
