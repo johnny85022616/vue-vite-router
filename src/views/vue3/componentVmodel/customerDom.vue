@@ -1,15 +1,19 @@
 <template>
   <div class="customInput">
-    <p>分數{{point}}</p>
-    <button>+1000</button>
+    <p>分數{{modelPoint}}</p>
+    <button @click="$emit('update:modelPoint' , modelPoint + 1000)">+1000</button>
   </div>
 </template>
 
 <script setup>
 import { computed } from "vue"
 
-  const p = defineProps(['point'])
-  const up = defineEmits(['update:modelPoint'])
+  defineProps(['modelPoint'])
+  defineEmits(['update:modelPoint'])
+
+  function plus(){
+    $emit('update:modelPoint' , props.modelPoint + 1000)
+  }
 
 
 </script>

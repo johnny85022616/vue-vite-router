@@ -3,7 +3,9 @@
     <h1>component v-model</h1>
     <customInput v-model="inputVal"/>
     <p>input值: {{inputVal}}</p>
-    <customerDom v-model="point"/>
+    <customerDom :modelPoint="modelPoint" @update:modelPoint="updatePoint"/>
+    <!-- <customerDom v-model="modelPoint"/> -->
+    <p>point值: {{modelPoint}}</p>
   </div>
 </template>
 
@@ -13,10 +15,10 @@ import customInput from './customInput.vue';
 import customerDom from './customerDom.vue';
 
   const inputVal = ref('')
-  const point = ref(0)
+  const modelPoint = ref(0)
 
   function updatePoint(plusPoint){
-    point.value += plusPoint
+    modelPoint.value = plusPoint
   }
 </script>
 
