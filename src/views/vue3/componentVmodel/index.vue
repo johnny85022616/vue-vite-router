@@ -3,8 +3,8 @@
     <h1>component v-model</h1>
     <customInput v-model="inputVal"/>
     <p>input值: {{inputVal}}</p>
-    <customerDom :modelPoint="modelPoint" @update:modelPoint="updatePoint"/>
-    <!-- <customerDom v-model="modelPoint"/> -->
+    <!-- <customerDom :modelPoint="modelPoint" @update:modelPoint="updatePoint"/> -->
+    <customerDom v-model:modelPoint = "modelPoint"/>
     <p>point值: {{modelPoint}}</p>
   </div>
 </template>

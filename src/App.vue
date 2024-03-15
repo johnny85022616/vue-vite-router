@@ -23,6 +23,7 @@ import { RouterLink, RouterView , useRouter } from 'vue-router'
         <RouterLink to="/vue3/componentVmodel">Component v-model</RouterLink>
         <RouterLink to="/vue3/composables">Composables</RouterLink>
         <RouterLink to="/vue3/defineExpose">DefineExpose</RouterLink>
+        <RouterLink to="/vue3/useAttrs">useAttrs</RouterLink>
         <h3>Pinia</h3>
         <RouterLink to="/vue3/pinia">pinia</RouterLink>
         <h3>Test</h3>

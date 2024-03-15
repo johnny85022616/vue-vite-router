@@ -43,6 +43,11 @@ const router = createRouter({
       component:() => import("../views/vue3/defineExpose/index.vue"),
     },
     {
+      path: "/vue3/useAttrs",
+      name: "useAttrs",
+      component:() => import("../views/vue3/useAttrs/index.vue"),
+    },
+    {
       path: "/vue3/pinia",
       name: "pinia",
       component:() => import("../views/vue3/pinia/index.vue"),
