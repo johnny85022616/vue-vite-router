@@ -1,9 +1,9 @@
 <template>
-  <officialInput :initValue="num" :activeBorderTag="activeBorderTag"/>
+  
 </template>
 
 <script setup>
-import { ref } from 'vue';
+
 import officialInput from './input.vue';
 
 const num = ref(0)
