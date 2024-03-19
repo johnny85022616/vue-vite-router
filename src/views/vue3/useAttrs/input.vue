@@ -1,7 +1,6 @@
 <template>
   <div class="customInput">
     <input type="text" v-model="inputVal" :class="[{green: activeBorderTag}]">
-    <p>input value: {{inputVal}}</p>
   </div>
 </template>
 
