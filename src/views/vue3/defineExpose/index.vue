@@ -16,12 +16,12 @@
 import { ref } from 'vue';
 import child from './childRef.vue';
 
-const title = ref('')
 const sonA = ref()
 const money = ref(1000)
 
 function handleClick(){
   money.value+=10
+  console.log(sonA);
   sonA.value.minusTenDollars()
 }
 </script>
