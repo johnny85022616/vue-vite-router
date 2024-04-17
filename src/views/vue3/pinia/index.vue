@@ -11,6 +11,7 @@
 <script setup>
 import { storeToRefs } from 'pinia';
 import {useCounterStore} from '../../../stores/counter';
+import {} from '../../../stores/info';
 
 const store = useCounterStore()
 const {product , count } = storeToRefs(store)  //將product & count 從store解構出來 
