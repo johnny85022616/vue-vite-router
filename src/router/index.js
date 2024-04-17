@@ -48,6 +48,11 @@ const router = createRouter({
       component:() => import("../views/vue3/parent/index.vue"),
     },
     {
+      path: "/vue3/provideInject",
+      name: "provideInject",
+      component:() => import("../views/vue3/provideInject/index.vue"),
+    },
+    {
       path: "/vue3/useAttrs",
       name: "useAttrs",
       component:() => import("../views/vue3/useAttrs/index.vue"),
