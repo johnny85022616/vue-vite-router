@@ -7,12 +7,17 @@ export const useInfoStore = defineStore('info',{
     return {
       name: "johnny",
       age: 20,
+      dollars: 500000,
     }
   },
-  action(){
-    
+  actions:{
+    addAge(addCount){
+      this.age += addCount
+    }
   },
-  getters(){
-
+  getters:{
+    fotmatDollars(){
+      return this.dollars.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+    }
   }
 })

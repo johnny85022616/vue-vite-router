@@ -11,11 +11,15 @@ export const useCounterStore = defineStore('counter',()=>{
 
   async function fetchApiData() {
       const data = await fetch(
-        "https://m.shopping.friday.tw/mobileapi/api/product/7995418/detail?cid=419485"
+        "https://k8aiapi.shopping.friday.tw/api/getalist"
       )
       .then((res) => res.json())
       .then((result) => { 
-        return result.data[0]
+        if(result){
+          return result[0]
+        }else{
+          console.log("不存在");
+        }
       });
       product.value = data
   }
