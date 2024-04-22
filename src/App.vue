@@ -20,6 +20,7 @@ import { RouterLink, RouterView , useRouter } from 'vue-router'
         <h3>vue3</h3>
         <RouterLink to="/vue3/props">Props</RouterLink>
         <RouterLink to="/vue3/emit">Emit</RouterLink>
+        <RouterLink to="/vue3/slot">Slot</RouterLink>
         <RouterLink to="/vue3/componentVmodel">Component v-model</RouterLink>
         <RouterLink to="/vue3/composables">Composables</RouterLink>
         <RouterLink to="/vue3/defineExpose">DefineExpose</RouterLink>

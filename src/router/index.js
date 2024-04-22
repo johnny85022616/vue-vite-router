@@ -28,6 +28,11 @@ const router = createRouter({
       component:() => import("../views/vue3/emit/index.vue"),
     },
     {
+      path: "/vue3/slot",
+      name: "slot",
+      component:() => import("../views/vue3/slot/index.vue"),
+    },
+    {
       path: "/vue3/componentVmodel",
       name: "componentVmodel",
       component:() => import("../views/vue3/componentVmodel/index.vue"),
