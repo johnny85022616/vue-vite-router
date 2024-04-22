@@ -18,7 +18,7 @@
       </template>
     </child>
 
-    <child1></child1>
+    <child1 :todo="todo"></child1>
   </div>
 </template>
 
