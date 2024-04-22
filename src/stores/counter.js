@@ -1,3 +1,5 @@
+//組合式api寫法
+
 import {defineStore} from 'pinia';
 import { computed, ref } from 'vue';
 
