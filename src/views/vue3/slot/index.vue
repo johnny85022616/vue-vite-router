@@ -23,14 +23,15 @@
 </template>
 
 <script setup>
+import { ref } from 'vue';
 import child from './child.vue';
 import child1 from './child1.vue';
 
 const todo = ref([
   {id:1 , title: "吃飯", done: true},
-  {id:1 , title: "睡覺", done: false},
-  {id:1 , title: "跑步", done: false},
-  {id:1 , title: "唱歌", done: true},
+  {id:2 , title: "睡覺", done: false},
+  {id:3 , title: "跑步", done: false},
+  {id:4 , title: "唱歌", done: true},
 ])
 </script>
 
