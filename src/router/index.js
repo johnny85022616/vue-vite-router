@@ -23,6 +23,11 @@ const router = createRouter({
       component:() => import("../views/vue3/props/index.vue"),
     },
     {
+      path: "/vue3/ref&reactive",
+      name: "ref&reactive",
+      component:() => import("../views/vue3/ref&reactive/ref&reactive.vue"),
+    },
+    {
       path: "/vue3/emit",
       name: "emit",
       component:() => import("../views/vue3/emit/index.vue"),
