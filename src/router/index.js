@@ -33,6 +33,11 @@ const router = createRouter({
       component:() => import("../views/vue3/toRefs/index.vue"),
     },
     {
+      path: "/vue3/computed",
+      name: "computed",
+      component:() => import("../views/vue3/computed/index.vue"),
+    },
+    {
       path: "/vue3/emit",
       name: "emit",
       component:() => import("../views/vue3/emit/index.vue"),
