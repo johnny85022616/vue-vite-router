@@ -6,7 +6,7 @@
   </div>
 </template>
 
-<script setup>
+<script setup name="primitiveData">
 import { ref, watch } from "vue";
 
   const count = ref(0)
