@@ -27,7 +27,7 @@ const lastName = ref('')
 //   return `${firstName.value.toUpperCase()}-${lastName.value.toUpperCase()}`
 // })
 
-//使用conputed中的set和get方法
+//使用conputed中的set(非唯獨)和get(唯讀)方法
 const fullName = computed({  
   set(val){  //改變fullName時參數會接收到fullname的值
     const arr = val.split('-')
