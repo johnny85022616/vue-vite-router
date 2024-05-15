@@ -38,6 +38,11 @@ const router = createRouter({
       component:() => import("../views/vue3/computed/index.vue"),
     },
     {
+      path: "/vue3/watch",
+      name: "watch",
+      component:() => import("../views/vue3/watch/index.vue"),
+    },
+    {
       path: "/vue3/emit",
       name: "emit",
       component:() => import("../views/vue3/emit/index.vue"),
