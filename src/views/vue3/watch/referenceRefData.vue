@@ -28,7 +28,7 @@ function changePerson(){
     age: 50,
   }
 }
-//預設不開啟深度監視，若要深度監視則需要手動開啟
+//預設不開啟深度監視，若要深度監視則需要手動開啟(但對象中的屬性oldValue會等於newValue)
 watch(person, (newVal , oldVal)=>{
   console.log(newVal, oldVal);
 }, {deep: true})
