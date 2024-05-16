@@ -1,6 +1,6 @@
 <template>
   <div class="primitiveData">
-    <h2>對象型別</h2>
+    <h2>監視ref包裹對象型別</h2>
     <h3>姓名：{{person.name}}</h3>
     <h3>年齡：{{person.age}}</h3>
     <button @click="changeNmae">變更姓名</button>

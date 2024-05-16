@@ -1,6 +1,6 @@
 <template>
   <div class="primitiveData">
-    <h2>一般型別</h2>
+    <h2>監視ref包裹一般型別</h2>
     <h3>{{count}}</h3>
     <button @click="plus">+1</button>
   </div>
