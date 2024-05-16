@@ -28,5 +28,7 @@ import { ref, watch } from "vue";
 </script>
 
 <style lang="scss" scoped>
-
+.primitiveData{
+  margin-bottom: 30px;
+}
 </style>
