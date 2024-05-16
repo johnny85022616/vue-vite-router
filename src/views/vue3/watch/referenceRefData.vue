@@ -1,5 +1,5 @@
 <template>
-  <div class="primitiveData">
+  <div class="referenceRefData">
     <h2>監視ref包裹對象型別</h2>
     <h3>姓名：{{person.name}}</h3>
     <h3>年齡：{{person.age}}</h3>
@@ -9,7 +9,7 @@
   </div>
 </template>
 
-<script setup name="referenceData">
+<script setup name="referenceRefData">
 import { ref, watch } from "vue";
 const person = ref({
   name: '張三',
@@ -38,6 +38,7 @@ watch(person, (newVal , oldVal)=>{
 
 
 <style lang="scss" scoped>
-
-
+.referenceRefData{
+  margin-bottom: 30px;
+}
 </style>
