@@ -25,7 +25,7 @@ function changePerson(){
   Object.assign(person , {name:'李四',age: 33})
 }
 
-//監視reactive定義的對象數據默認開啟深度監視，且是無法關閉的
+//監視reactive定義的對象數據默認開啟深度監視，且是無法關閉的，newVal會等於oldVal，因為監視的都為同個位址的物件，並沒有創建新的物件
 watch(person , (newVal , oldVal)=>{
   console.log(newVal , oldVal);
 })
