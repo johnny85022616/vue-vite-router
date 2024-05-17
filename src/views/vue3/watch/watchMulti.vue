@@ -1,5 +1,5 @@
 <template>
-  <div class="referenceDataInRefReactive">
+  <div class="watchMulti">
     <h2>監視多個對象類型中的屬性</h2>
     <h3>姓名：{{person.name}}</h3>
     <h3>年齡：{{person.age}}</h3>
@@ -12,7 +12,7 @@
   </div>
 </template>
 
-<script setup name="referenceDataInRefReactive">
+<script setup name="watchMulti">
 import { reactive, watch } from "vue";
 const person = reactive({
   name: '張三',
@@ -53,7 +53,7 @@ watch([()=>person.name ,()=>person.car] , (newVal , oldVal)=>{
 </script>
 
 <style lang="scss" scoped>
-.referenceRefData{
+.watchMulti{
   margin-bottom: 30px;
 }
 </style>
