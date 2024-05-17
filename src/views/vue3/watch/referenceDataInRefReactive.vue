@@ -66,7 +66,7 @@ watch(()=>person.car , (newVal , oldVal)=>{
 
 
 <style lang="scss" scoped>
-.referenceRefData{
+.referenceDataInRefReactive{
   margin-bottom: 30px;
 }
 </style>
