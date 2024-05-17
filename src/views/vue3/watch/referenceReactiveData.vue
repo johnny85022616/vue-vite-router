@@ -1,5 +1,5 @@
 <template>
-  <div class="primitiveData">
+  <div class="referenceReactiveData">
     <h2>監視reactive包裹對象型別</h2>
     <h3>姓名：{{person.name}}</h3>
     <h3>年齡：{{person.age}}</h3>
@@ -9,7 +9,7 @@
   </div>
 </template>
 
-<script setup name="referenceData">
+<script setup name="referenceReactiveData">
 import { reactive, watch } from "vue";
 const person = reactive({
   name: '張三',
@@ -34,6 +34,8 @@ watch(person , (newVal , oldVal)=>{
 
 
 <style lang="scss" scoped>
-
+.referenceReactiveData{
+  margin-bottom: 30px;
+}
 
 </style>
