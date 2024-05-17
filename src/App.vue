@@ -22,6 +22,7 @@ import { RouterLink, RouterView , useRouter } from 'vue-router'
         <RouterLink to="/vue3/toRefs">toRefs</RouterLink>
         <RouterLink to="/vue3/computed">computed</RouterLink>
         <RouterLink to="/vue3/watch">watch</RouterLink>
+        <RouterLink to="/vue3/watchEffect">watchEffect</RouterLink>
         <RouterLink to="/vue3/props">Props</RouterLink>
         <RouterLink to="/vue3/emit">Emit</RouterLink>
         <RouterLink to="/vue3/slot">Slot</RouterLink>

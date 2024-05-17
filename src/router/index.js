@@ -43,6 +43,11 @@ const router = createRouter({
       component:() => import("../views/vue3/watch/index.vue"),
     },
     {
+      path: "/vue3/watchEffect",
+      name: "watchEffect",
+      component:() => import("../views/vue3/watchEffect/index.vue"),
+    },
+    {
       path: "/vue3/emit",
       name: "emit",
       component:() => import("../views/vue3/emit/index.vue"),
