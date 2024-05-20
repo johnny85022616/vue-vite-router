@@ -48,6 +48,11 @@ const router = createRouter({
       component:() => import("../views/vue3/watchEffect/index.vue"),
     },
     {
+      path: "/vue3/typescript",
+      name: "typescript",
+      component:() => import("../views/vue3/typescript/index.vue"),
+    },
+    {
       path: "/vue3/emit",
       name: "emit",
       component:() => import("../views/vue3/emit/index.vue"),
