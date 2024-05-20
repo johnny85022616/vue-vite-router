@@ -8,6 +8,10 @@ interface carInter {
   car1: string
   car2: string
 }
-
+//寫法1
 export type PersonList = Array<PersonInter>
+
+
+//寫法2
+// export type PersonList = PersonInter[]
 
