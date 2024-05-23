@@ -11,6 +11,8 @@
 
 <script lang="ts" setup name="typescript">
 import type {PersonInter , PersonList} from '@/types';
+import child from './child.vue';
+import { reactive } from 'vue';
   const person1: PersonInter = {
     name: '張三',
     age: 19,
@@ -29,6 +31,8 @@ import type {PersonInter , PersonList} from '@/types';
   }
 
   const list:PersonList = [person1 , person2]
+
+  const personReactiveList = reactive<PersonList>([person1, person2])
 </script>
 
 <style lang="scss" scoped>
