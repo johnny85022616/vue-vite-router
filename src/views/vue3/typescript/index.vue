@@ -6,6 +6,7 @@
         {{ item }}
       </li>
     </ul>
+    <child :list="personReactiveList"/>
   </div>
 </template>
 

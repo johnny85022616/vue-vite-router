@@ -1,6 +1,6 @@
 <template>
   <div class="typescriptChild">
-    <h2>typeScript練習</h2>
+    <h2>typeScript子組件</h2>
     <ul>
       <li v-for="item, idx in list" :key="idx">
         <p>{{item.name}}</p>
@@ -19,6 +19,7 @@ import { reactive } from 'vue';
   
   //接收list + 限制類型
   const props = defineProps<{list: PersonList}>()
+  console.log(props);
 </script>
 
 <style lang="scss" scoped>
