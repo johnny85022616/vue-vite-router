@@ -15,11 +15,21 @@
 
 <script lang="ts" setup name="typescriptChild">
 import type {PersonList} from '@/types';
-import { reactive } from 'vue';
+import { reactive, withDefaults } from 'vue';
   
-  //接收list + 限制類型
-  const props = defineProps<{list: PersonList}>()
-  console.log(props);
+  //接收list
+  // const props = defineProps(['list'])
+
+  //接收list + 限制類型(加入？表示可傳可不傳，如果不加？父組件沒傳值會報錯)
+  // const props = defineProps<{list?: PersonList}>()
+
+  //接收list + 限制類型(加入？表示可傳可不傳，如果不加？父組件沒傳值會報錯) + 給定默認值
+  withDefaults(defineProps<{list?: PersonList}>(),{list: [{name: "阿明", age: 19,
+    cars: {
+      car1: "Benz",
+      car2: 'Bmw'
+    }}]})
+
 </script>
 
 <style lang="scss" scoped>
