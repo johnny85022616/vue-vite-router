@@ -108,6 +108,11 @@ const router = createRouter({
       component:() => import("../views/vue3/test/throttle.vue"),
     },
     {
+      path: "/vue_router/query",
+      name: "query",
+      component:() => import("../views/vue_router/query.vue"),
+    },
+    {
       path: "/nested",
       name: "nested",
       component: () => import("../views/nested.vue"),
