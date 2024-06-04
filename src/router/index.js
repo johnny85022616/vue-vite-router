@@ -118,6 +118,16 @@ const router = createRouter({
       component:() => import("../views/vue_router/param.vue"),
     },
     {
+      path: "/vue_router/param/:first/:second",
+      name: "param",
+      component:() => import("../views/vue_router/param.vue"),
+    },
+    {
+      path: "/vue_router/programmaticNavigation",
+      name: "programmaticNavigation",
+      component:() => import("../views/vue_router/programmaticNavigation.vue"),
+    },
+    {
       path: "/nested",
       name: "nested",
       component: () => import("../views/nested.vue"),

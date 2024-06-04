@@ -21,6 +21,7 @@ setTimeout(() => {
         <RouterLink :to="{ name: 'query', query: { name: '張三', age: 22 } }">query</RouterLink>
         <!-- param的路徑只可用name -->
         <RouterLink :to="{ name: 'param', params: { first: 'L0001', second: 'M0002' } }">Param</RouterLink>
+        <RouterLink :to="{ name: 'programmaticNavigation' }">programmaticNavigation</RouterLink>
         <h3>vue3</h3>
         <RouterLink to="/vue3/ref&reactive">ref&reactive</RouterLink>
         <RouterLink to="/vue3/toRefs">toRefs</RouterLink>
